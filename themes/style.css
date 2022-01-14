@@ -1,0 +1,428 @@
+/*
+Theme Name: Labb3_The_Big_Easy
+Text Domain: Labb3_The_Big_Easy
+Version: 1.0
+Description: Theme for Labb 3
+Tags: wordpress, responsive, advanced custom fields pro
+Author: Anna Stenholm, Martin Healu, Rebecka Sandahl, Sebastian Gestblom
+*/
+@font-face{
+    font-family: Hind;
+    src: url(./fonts/Hind-Regular.ttf);
+}
+
+body{
+    font-family: Hind;
+    margin: 0px;
+    background-color: rgb(252, 250, 250);
+}
+
+a{
+    text-decoration: none;
+}
+
+/******************************* Header-sections *****************************************/
+
+.white-space {
+    height: 260px;
+    width: 100%;
+    top:0px;
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+#header .yellow-bar {
+    position: absolute;
+    top: 260px;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 5px;
+    background-color: #F2DCA5;
+    border-top: solid 5px #8A4F46;
+}
+
+/******** nav-containers *********/
+
+.nav-menu-left {
+    height: 100%;
+    width: 40%;
+    float: left;  
+    margin:0px;
+    padding: 0px;   
+}
+
+.logo-wrap {
+        width: 20%;
+        height: 100%;
+        float:left;
+        margin: 0px;
+        padding: 0px;
+       
+}
+
+.nav-menu-right {
+    height: 100%;
+    width: 40%;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    
+   
+}
+
+
+/******** nav-styling *********/
+
+
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+#header nav ul {
+    padding-inline-start: 40px;
+
+}
+
+.nav-menu-left .nav-menu-right .bread-container ul:before, .nav-menu ul:after { content: ""; display: table; }
+.nav-menu-left .nav-menu-right .bread-container ul:after { clear: both; }
+.nav-menu-left .nav-menu-right .bread-container ul { *zoom: 1; }
+
+#header nav ul li a:link,
+#header nav ul li a:visited {
+    display: block;
+    padding: 10px 5px;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#header nav ul li a:hover {
+    background-color: #F2DCA5;
+}
+
+#header nav ul li.current-menu-item a:link,
+#header nav ul li.current-menu-item a:visited {
+    background-color: #F2DCA5;
+    color: #8A4F46;
+}
+
+#header nav ul li {
+    list-style: none;
+    float: left;
+    margin-top: 90px;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+.nav-menu-left > ul {
+    margin-left: 5%;
+}
+
+.nav-menu-right > ul {
+    
+    margin-right: 5%;
+}
+
+/******** header-logo  *********/
+
+#header .logo > img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    
+    width: 203px;
+    height: 216;
+    padding: 0px;
+}
+
+
+/***************** breadcrumbs  ********************/
+
+.bread-container {
+    font-size: 18px;
+    font-weight: medium;
+    color:black;  
+}
+
+.bread-container ul {
+    list-style: none;
+    float: left;
+    padding: 0px;
+    margin :0px;
+    margin-left: 5%;  
+         
+}
+.bread-container ul li {
+    list-style: none;
+    float: left;
+    margin-right: 10px; 
+    margin-top: 9px;       
+}
+
+ .bread-container ul li a:hover {
+    color: #8A4F46;
+}
+
+/******************* search - Rebecka *****************/
+
+.nav-search {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    top: 266px;
+    margin-top: 9px;
+}
+
+
+
+#header form label {
+    display: none;
+}
+
+#header form input {
+    border: none;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 px;
+    margin: 0px;
+}
+
+
+#header form input[type="submit"] {
+    background-color: #7b7171;
+    color: white;
+            margin-left: 10px;
+            margin-right: 50px;
+            top: 266px;
+        }
+ 
+/****************************** footer  *********************************/
+
+
+footer #footer {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+#footer .grey-field {
+position: relative;
+width: 100%;
+height: 400px;
+margin: 0px;
+margin-top: 5px;
+padding: 0px;
+background: #7B7171;
+}
+
+#footer .yellow-bar {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+    margin: 0px;
+    background-color: #F2DCA5;
+    border-top: solid 5px #8A4F46;
+}
+
+.row-bottom {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 9px;
+    color: #8A4F46;
+
+}
+
+.row-bottom p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#footer .grey-field h4 {
+    font-weight: medium;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#footer .grey-field p {
+    font-weight: regular;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.footer-left {
+    position: relative;
+    width: 30%;
+    height: 280px;
+    float: left;
+    margin-top: 42px;
+    margin-left: 5%;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    
+}
+
+.footer-right {
+    position: relative;
+    width: 30%;
+    height: 250px;
+    float: right;
+    margin-top: 42px;
+    margin-right: 5%;
+    text-align: center;
+
+}
+
+.footer-right a {
+    color:#F2DCA5;
+}
+
+.footer-right a:hover {
+            
+    color:#c7736a;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.footer-center {
+position: relative;
+float:left;
+width: 30%;
+height: 100%;
+margin: 0px;
+
+
+}
+
+.footer-center-image img {
+    display: block;
+    width: 203px;
+    height: 216px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    margin-top: 19px;
+    
+}
+
+.footer-center-fafa {
+    display: block;
+    width: 135px;
+    
+    font-size: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 32px;
+    padding: 0px;
+    color: white;
+   
+}
+
+.social ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+    #footer .social > li {
+        float: left;
+        line-height: 40px;
+        list-style: none;
+        margin-right: 5px;
+        padding: 0px;
+        text-align: center;
+    }
+
+        #footer .social > li > a {
+            
+            color: white;
+            display: block;
+            transition: 0.3s ease;
+            width: 40px;
+        }
+
+        #footer .social > li > a:hover {
+            
+            color:#c7736a;
+            background-color: rgba(0,0,0,0.2);
+        }
+
+
+
+
+
+/* Hero-section*/
+
+section.hero {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+/* Recipe of the day-section*/
+
+.label{
+    text-decoration: none;
+    bottom: 73px;
+    left: 85px;
+    background-color: #fff;
+    display: table;
+    min-height: 280px;
+    position: absolute;
+    width: 320px;
+}
+.badge{
+    border-radius: 54px;
+    font-size: 1.2rem;
+    height: 108px;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 40px 10px 0;
+    position: absolute;
+    top: -50px;
+    white-space: nowrap;
+    width: 108px;
+}
+.label-details{
+    display: table-cell;
+    margin: 0 auto;
+    max-width: 445px;
+    padding: 52px 30px 30px;
+    vertical-align: middle;
+}
+.top-label{
+    margin-bottom: 15px;
+    text-align: center;   
+}
+.name{
+    color: #222;
+}
+.topnote-sentence{
+    color: #222;
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: .6px;
+    line-height: 2.4rem;
+}
+.bottom-label{
+    color: #222;
+    text-align:center;
+}
